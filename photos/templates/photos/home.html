@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block section %}
+    <h1>Monty</h1>
+
+    {% if photos_list|length > 0 %}
+        <h2>Últimas fotos publicadas</h2>
+        {% include 'photos/photos_loop.html' %}
+    {% else %}
+        Sé el primero en publicar una foto!
+    {% endif %}
+
+{% endblock %}

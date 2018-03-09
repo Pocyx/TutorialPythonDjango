@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block section %}
+
+    <h2>Listado de fotos</h2>
+    {% include 'photos/photos_loop.html' with photos_list=photos%}
+
+{% endblock %}
